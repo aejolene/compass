@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>History Surrounds Us mobile exhibit app by aejolene</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">History Surrounds Us mobile exhibit app</h1>
+        <p class="header">An interactive compass for heritage organizations</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/aejolene/compass/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/aejolene/compass/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/aejolene/compass">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/aejolene">aejolene</a></p>
+
+
+      </header>
+      <section>
+        <p>Developed by Jolene Smith, <a href="http://www.dhr.virginia.gov/">Virginia Department of Historic Resources</a></p>
+
+<p><img src="https://github.com/aejolene/compass/blob/master/compassrose.JPG?raw=true" alt="compass rose">
+<img src="https://github.com/aejolene/compass/blob/master/compassvisitors.JPG?raw=true" alt="Visitors viewing exhibit"></p>
+
+<p>This app was originally developed to be the centerpiece of an interactive digital compass exhibit teaching people about why Richmond was an important place in 1865 as part of the <a href="http://richmondsjourney.org/">sesquicentennial</a>of the American Civil War and Emancipation. However, we plan to modify this to other locations and types of content.</p>
+
+<p>Visitors stand on a floor graphic of a compass rose, oriented in the correct direction on the grounds. Holding a tablet, as the visitor rotates, a video slideshow for one of 7 different historic resources around the city. When the video is finished, the compass displays again, allowing the user to rotate and select another site.</p>
+
+<p><img src="https://github.com/aejolene/compass/blob/master/compassvid.JPG?raw=true" alt="video screen capture">
+<img src="https://github.com/aejolene/compass/blob/master/compassmap.JPG?raw=true" alt="map within video screen capture"></p>
+
+<p>This app was built using <a href="http://ai2.appinventor.mit.edu/">MIT App Inventor 2</a> specifically for use on a single exhibit tablet. The videos are stored locally on the device and are not provided at this time. In this case, we produced simple videos by creating PowerPoint slideshows with appropriate timing and fade-out transitions, and then converting them to video. In order to make this application work, you will need to create a folder on your device to store videos and make sure the links in your App Inventor code blocks are updated to the correct path:</p>
+
+<p><img src="https://github.com/aejolene/compass/blob/master/compassblocks.JPG?raw=true" alt="App Inventor 2 blocks"></p>
+
+<p>It is possible to bundle video files directly into the app, however, large file sizes seem to cause problems and local storage is the best option to preserve quality.</p>
+
+<p>Once locations were selected, compass bearings were calculated for each and then judgmentally decided on an appropriate ranges for each (in order to fill up all 360° of the circle). </p>
+
+<p><strong><a href="https://github.com/aejolene/compass/blob/master/HistoryCompass_topub.aia">The file is available here.</a></strong> To use this file, go to App Inventor 2 and import project using this data.</p>
+
+<p>Graphic design improvements beyond stock AI2 buttons, etc. are on the horizon. If you make any big improvements, please submit a pull request! </p>
+
+<p><strong>Known issues:</strong> There is a bug in AI2 that impacts auto play of videos. A workaround uses a timer as the trigger. Additionally, the first time a video is launched, the controls bar remains visible. To solve this problem, just open up one video and then back out of the compass again. The bar should disappear after a couple of seconds when subsequent videos are opened.</p>
+
+<p>Specific tutorials and discussions consulted:</p>
+
+<p><a href="http://puravidaapps.com/snippets.php#2compass">http://puravidaapps.com/snippets.php#2compass</a></p>
+
+<p><a href="http://www.manning.com/beer/HelloApp_CH09.pdf">http://www.manning.com/beer/HelloApp_CH09.pdf</a></p>
+
+<p><a href="https://groups.google.com/forum/#!topicsearchin/mitappinventortest/video%2420AND%2420start/mitappinventortest/aDzNAWi5hnk">https://groups.google.com/forum/#!topicsearchin/mitappinventortest/video$20AND$20start/mitappinventortest/aDzNAWi5hnk</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
